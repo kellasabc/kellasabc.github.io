@@ -481,7 +481,7 @@ The comparison experiments were designed to provide a fair and comprehensive eva
    - Same evaluation metrics and success criteria
    - Multiple independent trials to ensure statistical reliability
 
-**Comprehensive Comparison Results:**
+<!-- **Comprehensive Comparison Results:**
 
 The comparison results provide strong evidence for the reliability and effectiveness of Flow-Matching Co-Policy:
 
@@ -509,7 +509,7 @@ Additional validation experiments were conducted to assess the robustness and re
 - **Safety**: Evaluation of safety-critical behaviors and collision avoidance
 - **Consistency**: Reproducibility of results across multiple training runs
 
-These validation experiments provide strong evidence that Flow-Matching Co-Policy is not only effective but also reliable and robust for practical deployment in human-robot collaborative scenarios.
+These validation experiments provide strong evidence that Flow-Matching Co-Policy is not only effective but also reliable and robust for practical deployment in human-robot collaborative scenarios. -->
 
 ## 4. Results
 
