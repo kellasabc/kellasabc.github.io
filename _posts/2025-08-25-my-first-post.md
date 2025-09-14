@@ -376,10 +376,12 @@ The experimental results provide strong evidence for the effectiveness of Flow-M
 
 | Method | Human Conditioning | Success Rate | Avg Planning Time (ms) | Trajectory Quality |
 |--------|-------------------|--------------|------------------------|-------------------|
-| Diffusion Co-Policy | Yes | 85.2% | 120.5 | Good |
-| Diffusion Co-Policy | No | 78.6% | 118.3 | Good |
-| Flow-Matching Co-Policy | Yes | 84.8% | 45.2 | Excellent |
-| Flow-Matching Co-Policy | No | 79.1% | 42.8 | Excellent |
+| Diffusion Co-Policy | Yes | 100% | 248.7 | Excellent |
+| Diffusion Co-Policy | No | 100% | 247.9 | Good |
+| Flow-Matching Co-Policy | Yes | 100% | 122.8 | Excellent |
+| Flow-Matching Co-Policy | No | 100% | 123.0 | Good |
+
+根据新的实验结果，我对内容进行如下修改：
 
 **Statistical Analysis and Significance Testing:**
 
@@ -392,13 +394,15 @@ To ensure the reliability of our results, we conducted extensive statistical ana
 
 **Key Findings and Analysis:**
 
-1. **Performance Parity**: Flow-Matching Co-Policy achieves comparable success rates to Diffusion Co-Policy, with differences well within the margin of error. This demonstrates that the computational efficiency gains do not come at the cost of task performance.
+1. **Perfect Performance Parity**: Flow-Matching Co-Policy achieves identical success rates (100%) to Diffusion Co-Policy across all conditions, demonstrating that the computational efficiency gains are achieved without any compromise in task performance. This perfect parity provides strong evidence for the practical viability of Flow-Matching Co-Policy.
 
-2. **Significant Speed Improvement**: The 60% reduction in planning time represents a substantial improvement that makes real-time human-robot collaboration more feasible. This improvement is particularly important for safety-critical applications where low latency is crucial.
+2. **Dramatic Speed Improvement**: The approximately 50% reduction in planning time (from ~248ms to ~123ms) represents a substantial improvement that significantly enhances the feasibility of real-time human-robot collaboration. This improvement is particularly crucial for safety-critical applications where low latency is essential for maintaining safe and responsive interaction.
 
-3. **Enhanced Trajectory Quality**: Flow-Matching Co-Policy generates smoother, more natural trajectories. This improvement is attributed to the deterministic nature of ODE-based generation, which produces more consistent outputs than the stochastic sampling process of diffusion models.
+3. **Consistent Trajectory Quality**: Flow-Matching Co-Policy maintains excellent trajectory quality comparable to Diffusion Co-Policy, with both methods achieving "Excellent" ratings in human-conditioned scenarios. This consistency is attributed to the deterministic nature of ODE-based generation, which produces more predictable and stable outputs than the stochastic sampling process of diffusion models.
 
-4. **Conditioning Benefits**: Human action conditioning provides benefits for both methods, but the improvement is more pronounced for Flow-Matching Co-Policy, suggesting better utilization of conditioning information.
+4. **Minimal Conditioning Impact**: Interestingly, human action conditioning shows minimal impact on planning time for both methods (248.7ms vs 247.9ms for Diffusion, 122.8ms vs 123.0ms for Flow-Matching), suggesting that the computational overhead of conditioning is negligible compared to the core generation process. This finding indicates that the benefits of conditioning can be obtained without significant computational cost.
+
+5. **Robust Performance**: The consistent 100% success rate across all conditions demonstrates the robustness and reliability of both methods, with Flow-Matching Co-Policy maintaining this perfect performance while achieving substantial computational efficiency gains.
 
 ### 3.4 Validating Flow Matching Reliability in Lifting Tasks
 
