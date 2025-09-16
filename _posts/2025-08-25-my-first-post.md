@@ -381,8 +381,6 @@ The experimental results provide strong evidence for the effectiveness of Flow-M
 | Flow-Matching Co-Policy | Yes | 100% | 122.8 | Excellent |
 | Flow-Matching Co-Policy | No | 100% | 123.0 | Good |
 
-根据新的实验结果，我对内容进行如下修改：
-
 **Statistical Analysis and Significance Testing:**
 
 To ensure the reliability of our results, we conducted extensive statistical analysis:
